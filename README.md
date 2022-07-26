@@ -1,2 +1,3 @@
-# goit-markup-hw-04
-homework 04 in GoIT school
+Homework #3
+
+https://abdeev.github.io/domashka03/index.html
