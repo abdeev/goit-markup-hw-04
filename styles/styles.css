@@ -398,12 +398,13 @@ li > .accent-button {
   margin-right: auto;
 }
 .svg-client {
+  display: inline-block;
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
-.svg-client:hover,
-.svg-client:focus {
+.logo-client:hover,
+.logo-client:focus {
   fill: var(--btn-bg-accent-color);
 }
 
