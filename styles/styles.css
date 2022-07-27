@@ -1,4 +1,7 @@
 :root {
+  /* used fonts */
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font-logo: "Raleway", sans-serif;
   /* color palette */
   --main-header-color: #000000;
   --bg-body-color: #e5e5e5;
@@ -19,7 +22,7 @@
   --text-description-color: #757575;
 }
 .body {
-  font-family: "Roboto";
+  font-family: var(--primary-font-family);
   color: var(--main-header-color);
   background-color: var(--bg-head-color);
   margin-top: 0px;
@@ -102,7 +105,9 @@ li > .accent-button {
 }
 /* CSS HEADER =============================================*/
 .header {
+  max-width: 1600px;
   padding: 0;
+  margin: 0 auto;
   border-bottom: 1px solid var(--borders-color);
 }
 .box-logo {
@@ -114,7 +119,7 @@ li > .accent-button {
 }
 .logo-web {
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: var(--secondary-font-logo);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -123,7 +128,7 @@ li > .accent-button {
 }
 .logo-studio {
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: var(--secondary-font-logo);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -150,18 +155,15 @@ li > .accent-button {
   letter-spacing: 0.02em;
   color: var(--header-dark-color);
 }
-.box-contacts {
-  margin-left: auto;
-  margin-right: 0px;
-}
 .contacts {
   display: flex;
+
   gap: 50px;
-  align-content: center;
 }
 .contacts-item {
+  display: flex;
+  align-items: center;
   padding: 32px 0;
-
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -169,7 +171,28 @@ li > .accent-button {
   letter-spacing: 0.02em;
   color: var(--text-description-color);
 }
-.mail::before {
+.mail {
+}
+.svg-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: inherit;
+}
+.svg-envelope:hover {
+  color: #188ce8;
+  fill: #2196f3;
+}
+.phone {
+}
+.svg-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  margin-bottom: -2px;
+  fill: currentColor;
+}
+/* .mail::before {
   display: inline-block;
   margin-right: 10px;
   content: "";
@@ -191,14 +214,25 @@ li > .accent-button {
 .mail:hover,
 .phone:hover {
   fill: currentColor;
-}
+} */
 
-/* блок замовити послугу=================================== */
+/* блок ГЕРОЙ =================================== */
 .hero {
+  max-width: 1600px;
+  min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
   text-align: center;
-  background: var(--bg-footer-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/BG-btn-block.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-text-button {
   width: 600px;
@@ -243,13 +277,16 @@ li > .accent-button {
   margin-right: 30px;
 }
 .icon-features {
-  outline: 1px solid #000000;
   box-sizing: border-box;
   margin-bottom: 30px;
   padding: 25px 100px;
 
   background-color: var(--block-bg-white-color);
   border-radius: 4px;
+}
+.svg-features {
+  width: 70px;
+  height: 70px;
 }
 .features-card-header {
   text-transform: uppercase;
@@ -306,7 +343,7 @@ li > .accent-button {
   border-radius: 0px 0px 4px 4px;
 }
 .wrap {
-  padding: 30px;
+  padding: 30px 32px;
 }
 .team-header {
   margin-bottom: 10px;
@@ -318,6 +355,7 @@ li > .accent-button {
   color: var(--header-dark-color);
 }
 .team-description {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -325,10 +363,57 @@ li > .accent-button {
   letter-spacing: 0.03em;
   color: var(--text-description-color);
 }
+.social-links {
+  display: flex;
+}
+.social-links > li:not(:last-child) {
+  margin-right: 10px;
+}
+.button-social {
+  width: 44px;
+  height: 44px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.button-social:hover {
+  background-color: var(--btn-bg-accent-color);
+  cursor: pointer;
+}
+.svg-social {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+/* Наші клієнти================================================== */
+.logos-list {
+  display: flex;
+}
+.logo-client {
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.logo-client:not(:last-child) {
+  margin-right: auto;
+}
+.svg-client {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+.svg-client:hover,
+.svg-client:focus {
+  fill: var(--btn-bg-accent-color);
+}
+
 /* Підвал ===================================================*/
 .footer {
   padding: 60px 0;
   background-color: var(--bg-footer-color);
+}
+.logo-addr {
+  margin-right: 70px;
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -354,6 +439,21 @@ li > .accent-button {
 .footer-contacts {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+.button-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.subscribe {
+  align-self: flex-start;
+}
+.header-subscribe {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* Стилі до сторінки Портфоліо  ============================*/
