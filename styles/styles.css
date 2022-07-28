@@ -105,7 +105,6 @@ li > .accent-button {
 }
 /* CSS HEADER =============================================*/
 .header {
-  max-width: 1600px;
   padding: 0;
   margin: 0 auto;
   border-bottom: 1px solid var(--borders-color);
@@ -171,25 +170,16 @@ li > .accent-button {
   letter-spacing: 0.02em;
   color: var(--text-description-color);
 }
-.mail {
-}
 .svg-envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: inherit;
-}
-.svg-envelope:hover {
-  color: #188ce8;
-  fill: #2196f3;
-}
-.phone {
+  fill: currentColor;
 }
 .svg-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  margin-bottom: -2px;
   fill: currentColor;
 }
 /* .mail::before {
@@ -365,25 +355,31 @@ li > .accent-button {
 }
 .social-links {
   display: flex;
+  color: var(--text-description-color);
 }
 .social-links > li:not(:last-child) {
   margin-right: 10px;
 }
 .button-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border: 0px;
   border-radius: 50%;
   background-color: transparent;
+  color: var(--text-description-color);
 }
 .button-social:hover {
   background-color: var(--btn-bg-accent-color);
+  color: #ffffff;
   cursor: pointer;
 }
 .svg-social {
   width: 20px;
   height: 20px;
-  fill: red;
+  fill: currentColor;
 }
 /* Наші клієнти================================================== */
 .logos-list {
@@ -393,6 +389,7 @@ li > .accent-button {
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: var(--text-description-color);
 }
 .logo-client:not(:last-child) {
   margin-right: auto;
@@ -405,7 +402,9 @@ li > .accent-button {
 }
 .logo-client:hover,
 .logo-client:focus {
-  fill: var(--btn-bg-accent-color);
+  color: var(--btn-bg-accent-color);
+  border: 1px solid var(--btn-bg-accent-color);
+  cursor: pointer;
 }
 
 /* Підвал ===================================================*/
@@ -451,7 +450,7 @@ li > .accent-button {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 32px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -500,6 +499,7 @@ li > .accent-button {
 }
 
 .project-item {
+  flex-basis: calc(((100%-30px) - (2 * 30px)) / 3);
   background-color: var(--bg-head-color);
 }
 .card-description {
