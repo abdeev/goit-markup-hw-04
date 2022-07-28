@@ -208,6 +208,7 @@ li > .accent-button {
 
 /* блок ГЕРОЙ =================================== */
 .hero {
+  position: relative;
   max-width: 1600px;
   min-height: 600px;
   padding-top: 200px;
@@ -224,6 +225,19 @@ li > .accent-button {
   background-size: cover;
   background-position: center;
 }
+/* PRACTICE FOR HW5 .bg-hero::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-hero:hover::before {
+  opacity: 0;
+} */
 .hero-text-button {
   width: 600px;
   margin: 0 auto 30px;
