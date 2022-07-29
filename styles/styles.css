@@ -215,6 +215,7 @@ li > .accent-button {
   padding-bottom: 200px;
   margin: 0 auto;
   text-align: center;
+  background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -224,10 +225,10 @@ li > .accent-button {
   background-size: cover;
   background-position: center;
 }
-.hero::before {
+/* .hero::before {
   content: "";
-  background: #c4c4c4;
-}
+  
+} */
 /* PRACTICE FOR HW5 
 .bg-hero::before {
   display: inline-block;
