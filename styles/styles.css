@@ -156,7 +156,7 @@ li > .accent-button {
 }
 .contacts {
   display: flex;
-
+  align-items: center;
   gap: 50px;
 }
 .contacts-item {
@@ -354,6 +354,7 @@ li > .accent-button {
 }
 .wrap {
   padding: 30px 32px;
+  background-color: #ffffff;
 }
 .team-header {
   margin-bottom: 10px;
@@ -389,9 +390,14 @@ li > .accent-button {
   border: 0px;
   border-radius: 50%;
   background-color: transparent;
-  color: var(--text-description-color);
+  color: var(--logo-studio-light);
 }
 .button-social:hover {
+  background-color: var(--btn-bg-accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+.button-social:focus {
   background-color: var(--btn-bg-accent-color);
   color: #ffffff;
   cursor: pointer;
