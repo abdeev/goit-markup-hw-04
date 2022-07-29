@@ -65,10 +65,8 @@ address {
   font-style: normal;
 }
 
-.contacts-item:hover,
 .nav-item:hover,
 .footer-contacts:hover,
-.contacts-item:focus,
 .nav-item:focus,
 .footer-contacts:focus {
   color: var(--btn-bg-accent-color);
@@ -160,10 +158,6 @@ li > .accent-button {
   gap: 50px;
 }
 .contacts-item {
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -182,29 +176,24 @@ li > .accent-button {
   margin-right: 10px;
   fill: currentColor;
 }
-/* .mail::before {
-  display: inline-block;
-  margin-right: 10px;
-  content: "";
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/icons/envelope.svg);
+.mail {
+  padding: 32px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-.phone::before {
-  display: inline-block;
-  margin-right: 10px;
-  content: "";
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/icons/phone.svg);
-  color: var(--text-description-color);
+.phone {
+  padding: 32px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .mail:focus,
 .phone:focus,
 .mail:hover,
 .phone:hover {
-  fill: currentColor;
-} */
+  color: var(--btn-bg-accent-color);
+}
 
 /* блок ГЕРОЙ =================================== */
 .hero {
@@ -390,7 +379,7 @@ li > .accent-button {
   border: 0px;
   border-radius: 50%;
   background-color: transparent;
-  color: var(--logo-studio-light);
+  color: var(--text-description-color);
 }
 .button-social:hover {
   background-color: var(--btn-bg-accent-color);
@@ -412,22 +401,20 @@ li > .accent-button {
   display: flex;
 }
 .logo-client {
-  padding: 16px 32px;
+  display: inline-block;
+  padding: 14px 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--text-description-color);
 }
-.logo-client:not(:last-child) {
-  margin-right: auto;
+.logos-list > li:not(:last-child) {
+  margin-right: 30px;
 }
 .svg-client {
-  display: inline-block;
-  width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 .logo-client:hover,
-.logo-client:focus {
+.logo-client:focus-visible {
   color: var(--btn-bg-accent-color);
   border: 1px solid var(--btn-bg-accent-color);
   cursor: pointer;
@@ -468,6 +455,7 @@ li > .accent-button {
 }
 .button-footer {
   background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 .subscribe {
   align-self: flex-start;
