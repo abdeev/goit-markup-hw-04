@@ -225,11 +225,12 @@ li > .accent-button {
   background-size: cover;
   background-position: center;
 }
-/* .hero::before {
+
+/* PRACTICE FOR HW5 
+.hero::before {
   content: "";
   
-} */
-/* PRACTICE FOR HW5 
+}
 .bg-hero::before {
   display: inline-block;
   position: absolute;
