@@ -64,14 +64,45 @@ img {
 address {
   font-style: normal;
 }
-
+/* ================HOVER FOCUS =======================  */
 .nav-item:hover,
 .footer-contacts:hover,
 .nav-item:focus,
-.footer-contacts:focus {
+.footer-contacts:focus,
+.mail:focus,
+.phone:focus,
+.mail:hover,
+.phone:hover,
+.button-order:hover,
+.button-order:focus {
   color: var(--btn-bg-accent-color);
   cursor: pointer;
 }
+.button-social:hover {
+  background-color: var(--btn-bg-accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+.button-social:focus {
+  background-color: var(--btn-bg-accent-color);
+}
+.logo-client:hover {
+  color: var(--btn-bg-accent-color);
+  border: 1px solid var(--btn-bg-accent-color);
+  cursor: pointer;
+}
+.logo-client:focus {
+  color: var(--btn-bg-accent-color);
+}
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--btn-bg-hover-color);
+  color: var(--btn-text-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+/* ================HOVER FOCUS END=======================  */
 
 li > .accent-button {
   color: var(--btn-bg-accent-color);
@@ -188,12 +219,6 @@ li > .accent-button {
   display: flex;
   align-items: center;
 }
-.mail:focus,
-.phone:focus,
-.mail:hover,
-.phone:hover {
-  color: var(--btn-bg-accent-color);
-}
 
 /* блок ГЕРОЙ =================================== */
 .hero {
@@ -255,14 +280,6 @@ li > .accent-button {
   line-height: 1.88;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.button-order:hover {
-  background-color: var(--btn-bg-hover-color);
-  cursor: pointer;
-}
-.button-order:focus {
-  background-color: var(--btn-bg-hover-color);
-  cursor: pointer;
 }
 
 /* Наші особливості =========================================*/
@@ -381,16 +398,6 @@ li > .accent-button {
   background-color: transparent;
   color: var(--text-description-color);
 }
-.button-social:hover {
-  background-color: var(--btn-bg-accent-color);
-  color: #ffffff;
-  cursor: pointer;
-}
-.button-social:focus {
-  background-color: var(--btn-bg-accent-color);
-  color: #ffffff;
-  cursor: pointer;
-}
 .svg-social {
   width: 20px;
   height: 20px;
@@ -413,12 +420,6 @@ li > .accent-button {
 .svg-client {
   fill: currentColor;
 }
-.logo-client:hover,
-.logo-client:focus-visible {
-  color: var(--btn-bg-accent-color);
-  border: 1px solid var(--btn-bg-accent-color);
-  cursor: pointer;
-}
 
 /* Підвал ===================================================*/
 .footer {
@@ -435,7 +436,6 @@ li > .accent-button {
   color: var(--logo-studio-light);
 }
 .address {
-  /* margin-top: 20px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -471,14 +471,6 @@ li > .accent-button {
 }
 
 /* Стилі до сторінки Портфоліо  ============================*/
-.button-filter:hover,
-.button-filter:focus {
-  background-color: var(--btn-bg-hover-color);
-  color: var(--btn-text-accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
 .portfolio-main {
   background-color: var(--bg-head-color);
 }
