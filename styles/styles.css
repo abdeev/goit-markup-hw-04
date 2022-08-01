@@ -20,6 +20,7 @@
   --btn-text-def-color: #212121;
   --btn-bg-hover-color: #188ce8;
   --text-description-color: #757575;
+  --color-icon-grey: #afb1b8;
 }
 .body {
   font-family: var(--primary-font-family);
@@ -88,6 +89,7 @@ address {
 }
 .button-social:focus {
   background-color: var(--btn-bg-accent-color);
+  color: #ffffff;
 }
 .logo-client:hover {
   color: var(--btn-bg-accent-color);
@@ -390,7 +392,7 @@ li > .accent-button {
 }
 .social-links {
   display: flex;
-  color: var(--text-description-color);
+  color: var(--color-icon-grey);
 }
 .social-links > li:not(:last-child) {
   margin-right: 10px;
@@ -404,7 +406,7 @@ li > .accent-button {
   border: 0px;
   border-radius: 50%;
   background-color: transparent;
-  color: var(--text-description-color);
+  color: var(--color-icon-grey);
 }
 .svg-social {
   width: 20px;
@@ -420,7 +422,7 @@ li > .accent-button {
   padding: 14px 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--text-description-color);
+  color: var(--color-icon-grey);
 }
 .logos-list > li:not(:last-child) {
   margin-right: 30px;
