@@ -79,6 +79,7 @@ address {
 .button-order:hover,
 .button-order:focus {
   background: var(--btn-bg-hover-color);
+  cursor: pointer;
 }
 .button-social:hover {
   background-color: var(--btn-bg-accent-color);
